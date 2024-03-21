@@ -1,15 +1,42 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
+.header {   
+    padding: 0;
+    height: 100px;
+    /* margin-bottom: -6px; */
+}
+
+.logo-home {
+    padding: 14px 16px;
+
+}
+
+.background-img {
+    width: 100%;
+    height: 100px;
+}
 
 .container {
-    margin-top: 100px;
+    padding-top: 0;
     display: flex;
     justify-content: flex-end;
     background-color: #333;
     border-radius: 20px;
     overflow: hidden;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-.container div{
+.a-navbar{
+
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -18,18 +45,19 @@
     font-size: 17px;
 }
 
-.container div:hover{
-    background-color: #ddd;
+.container div.nav-container:hover{
+    transition: 0.2s ease-in;
+    border-radius: 20px;
+    background-color: #37a959;
     color: black;
 }
 
-.container div.active{
-    background-color: #04aa6d;
-    color: white;
+.container input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 17px;
 }
 
-.logo {
-    margin-right: auto;
-    display: flex;
-    padding: 14px 16px;
-}
